@@ -78,7 +78,7 @@ header {
 }
 
 .meal:hover {
-  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  box-shadow: 0 10px 20px rgba(99, 99, 99, 0.2);
   cursor: pointer;
 }
 
@@ -111,12 +111,19 @@ header {
   margin: auto 15px;
 }
 
+.line-3 {
+  display: flex;
+}
+
 .basket {
   width: 350px;
-  height: 300px;
+  height: 330px;
   margin-left: 30px;
   background-color: white;
   border-radius: 5px;
+  box-shadow: 2px 2px 20px rgba(168, 168, 168, 0.2);
+  box-sizing: border-box;
+  padding: 10px;
 }
 
 .basket > button {
@@ -128,7 +135,51 @@ header {
   text-align: center;
   background-color: #00cdbd;
   line-height: 50px;
-  margin: 10px 10px auto 10px;
   border-radius: 5px;
   width: 330px;
+  margin-bottom: 10px;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.line {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 40px;
+}
+
+.subTotal {
+  border-top: lightgray solid 1px;
+  border-bottom: lightgray solid 1px;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+
+.item > .col-1 {
+  display: flex;
+}
+
+.item > .col-1 > button {
+  color: #00cdbd;
+  font-size: 20px;
+  line-height: 15px;
+  background-color: white;
+  margin: auto 0;
+  border: none;
 }
