@@ -1,3 +1,6 @@
+import Header from "./components/Header.js";
+import Restaurant from "./components/Restaurant.js";
+import Categories from "./components/Categories.js";
 import "./App.css";
 import axios from "axios";
 import { useState, useEffect } from "react";
@@ -12,6 +15,7 @@ function App() {
         const response = await axios.get(
           "https://deliveroo-backend-adeline.herokuapp.com/"
         );
+        console.log(response.data);
         setData(response.data);
         setIsLoading(false);
       } catch (error) {
@@ -25,12 +29,9 @@ function App() {
     <span>En cours de chargement...</span>
   ) : (
     <div>
-      <div>{data.restaurant}</div>
-      <div>
-        {data.categories.map((category, index) => {
-          return <div key={index}>{category.name}</div>;
-        })}
-      </div>
+      <Header />
+      <Restaurant data={data} />
+      <Categories data={data} />
     </div>
   );
 }

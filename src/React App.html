@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <style>body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvaW5kZXguY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsU0FBUztFQUNUOztjQUVZO0VBQ1osbUNBQW1DO0VBQ25DLGtDQUFrQztBQUNwQzs7QUFFQTtFQUNFO2FBQ1c7QUFDYiIsInNvdXJjZXNDb250ZW50IjpbImJvZHkge1xuICBtYXJnaW46IDA7XG4gIGZvbnQtZmFtaWx5OiAtYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsICdTZWdvZSBVSScsICdSb2JvdG8nLCAnT3h5Z2VuJyxcbiAgICAnVWJ1bnR1JywgJ0NhbnRhcmVsbCcsICdGaXJhIFNhbnMnLCAnRHJvaWQgU2FucycsICdIZWx2ZXRpY2EgTmV1ZScsXG4gICAgc2Fucy1zZXJpZjtcbiAgLXdlYmtpdC1mb250LXNtb290aGluZzogYW50aWFsaWFzZWQ7XG4gIC1tb3otb3N4LWZvbnQtc21vb3RoaW5nOiBncmF5c2NhbGU7XG59XG5cbmNvZGUge1xuICBmb250LWZhbWlseTogc291cmNlLWNvZGUtcHJvLCBNZW5sbywgTW9uYWNvLCBDb25zb2xhcywgJ0NvdXJpZXIgTmV3JyxcbiAgICBtb25vc3BhY2U7XG59XG4iXSwic291cmNlUm9vdCI6IiJ9 */</style><style>body {
+  font-family: "System-ui";
+  color: #2e3333;
+  background-color: #f3f5f5;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 19px;
+  color: #868a8a;
+}
+
+header {
+  height: 59px;
+  border-bottom: lightgray solid 1px;
+  background-color: white;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  height: 59px;
+}
+
+.restaurant {
+  display: flex;
+}
+
+.restaurant > .col-1 {
+  width: 70%;
+  margin-right: 30px;
+}
+
+.restaurant > .col-2 {
+  width: 30%;
+  border-radius: 5px;
+}
+
+.categories {
+  width: 70%;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvQXBwLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHdCQUF3QjtFQUN4QixjQUFjO0VBQ2QseUJBQXlCO0FBQzNCOztBQUVBO0VBQ0UsZUFBZTtFQUNmLGlCQUFpQjtBQUNuQjs7QUFFQTtFQUNFLGVBQWU7RUFDZixpQkFBaUI7RUFDakIsaUJBQWlCO0FBQ25COztBQUVBO0VBQ0UsZUFBZTtFQUNmLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLGVBQWU7RUFDZixjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsWUFBWTtFQUNaLGtDQUFrQztFQUNsQyx1QkFBdUI7QUFDekI7O0FBRUE7RUFDRSxhQUFhO0VBQ2IsY0FBYztBQUNoQjs7QUFFQTtFQUNFLFlBQVk7QUFDZDs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTtFQUNFLFVBQVU7RUFDVixrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxVQUFVO0VBQ1Ysa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsVUFBVTtBQUNaIiwic291cmNlc0NvbnRlbnQiOlsiYm9keSB7XG4gIGZvbnQtZmFtaWx5OiBcIlN5c3RlbS11aVwiO1xuICBjb2xvcjogIzJlMzMzMztcbiAgYmFja2dyb3VuZC1jb2xvcjogI2YzZjVmNTtcbn1cblxuaDEge1xuICBmb250LXNpemU6IDMycHg7XG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xufVxuXG5oMiB7XG4gIGZvbnQtc2l6ZTogMjRweDtcbiAgbGluZS1oZWlnaHQ6IDQwcHg7XG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xufVxuXG5oMyB7XG4gIGZvbnQtc2l6ZTogMThweDtcbiAgZm9udC13ZWlnaHQ6IDQwMDtcbn1cblxucCB7XG4gIGZvbnQtc2l6ZTogMTlweDtcbiAgY29sb3I6ICM4NjhhOGE7XG59XG5cbmhlYWRlciB7XG4gIGhlaWdodDogNTlweDtcbiAgYm9yZGVyLWJvdHRvbTogbGlnaHRncmF5IHNvbGlkIDFweDtcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG59XG5cbi5jb250YWluZXIge1xuICB3aWR0aDogMTIwMHB4O1xuICBtYXJnaW46IDAgYXV0bztcbn1cblxuLmxvZ28ge1xuICBoZWlnaHQ6IDU5cHg7XG59XG5cbi5yZXN0YXVyYW50IHtcbiAgZGlzcGxheTogZmxleDtcbn1cblxuLnJlc3RhdXJhbnQgPiAuY29sLTEge1xuICB3aWR0aDogNzAlO1xuICBtYXJnaW4tcmlnaHQ6IDMwcHg7XG59XG5cbi5yZXN0YXVyYW50ID4gLmNvbC0yIHtcbiAgd2lkdGg6IDMwJTtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xufVxuXG4uY2F0ZWdvcmllcyB7XG4gIHdpZHRoOiA3MCU7XG59XG4iXSwic291cmNlUm9vdCI6IiJ9 */</style><script charset="utf-8" src="./React App_files/main.4eda781cbf24ea5f0abf.hot-update.js"></script><script charset="utf-8" src="./React App_files/main.9ef05777e35d474f20d3.hot-update.js"></script><script charset="utf-8" src="./React App_files/main.09e7e8c5b7366fb67c30.hot-update.js"></script><script charset="utf-8" src="./React App_files/main.dba2e45ff302bbfc1cbd.hot-update.js"></script><script charset="utf-8" src="./React App_files/main.857227bfabf8ff350a53.hot-update.js"></script><script charset="utf-8" src="./React App_files/main.25e0123eb25391a51a11.hot-update.js"></script><script charset="utf-8" src="./React App_files/main.99cb8af0b0da2ec73fc2.hot-update.js"></script><script charset="utf-8" src="./React App_files/main.186f02f59ecfa99d6686.hot-update.js"></script><script charset="utf-8" src="./React App_files/main.027fda3586d26ff3eba2.hot-update.js"></script></head>
+  <body cz-shortcut-listen="true">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div><header><div class="container"><img class="logo" src="./React App_files/logo.f70dcce7.png" alt=""></div></header><div style="background-color: white; padding: 30px 0px;"><div class="restaurant container"><div class="col-1"><h1>Le Pain Quotidien - Montorgueil</h1><p>Profitez de chaque plaisir de la vie quotidienne. Le Pain Quotidien propose des ingrédients simples et sains, du bon pain, des fruits et des légumes frais et de saison issus de l’agriculture biologique.</p></div><img class="col-2" src="./React App_files/header-image.jpg" alt=""></div></div><div class="categories container"><div class="category"><h2>Brunchs</h2><div class="meal"><div class="col-1"><h3>Brunch authentique 1 personne</h3><p>Assiette de jambon cuit, jambon fumeì, terrine, comté bio &amp; camembert bio, salade jeunes pousses, oeuf poché bio, pain bio &amp; confiture, 1 viennoiserie bio au choix, granola parfait bio, jus de fruits 33cl au choix</p><div><div>25.00</div><div>Populaire</div></div></div><img class="col-2" src="./React App_files/item-image.jpg" alt=""></div><div class="meal"><div class="col-1"><h3>Brunch vegan</h3><p>Falafels bio, houmous bio, avocat aux super graines bio, lentilles au paprika, herbes fraîches, houmous de carotte et légumes de saison, soupe du jour bio, pain bio &amp; confiture, crunola parfait aux fruits de saison, flûte aux raisins et noisettes, jus de fruits 33cl au choix</p><div><div>25.00</div></div></div><img class="col-2" src="./React App_files/item-image(1).jpg" alt=""></div></div><div class="category"><h2>Petit déjeuner</h2><div class="meal"><div class="col-1"><h3>Petit-déjeuner 1 personne</h3><p>Assortiment de pains bio, beurre &amp; confitures bio + 1 viennoiserie bio au choix + 1 boisson fraîche au choix</p><div><div>10.40</div></div></div><img class="col-2" alt=""></div><div class="meal"><div class="col-1"><h3>Fromage blanc bio au miel</h3><p></p><div><div>10.40</div></div></div><img class="col-2" alt=""></div><div class="meal"><div class="col-1"><h3>Granola parfait bio</h3><p>Yaourt, granola, et fruits frais de saison</p><div><div>6.60</div><div>Populaire</div></div></div><img class="col-2" src="./React App_files/item-image(2).jpg" alt=""></div><div class="meal"><div class="col-1"><h3>Crunola parfait bio (100% végétalien)</h3><p>100% végétalien - granola cru, banane, lait de coco et beurre de noix de cajou</p><div><div>6.60</div></div></div><img class="col-2" alt=""></div><div class="meal"><div class="col-1"><h3>Salade de fruits bio de saison</h3><p>Pomme, ananas, kiwi, orange, grenade, myrtilles</p><div><div>6.90</div></div></div><img class="col-2" src="./React App_files/item-image(3).jpg" alt=""></div><div class="meal"><div class="col-1"><h3>Omelette au four de saison</h3><p>Courge butternut, chèvre &amp; thym, avec une salade de jeunes pousses</p><div><div>6.60</div></div></div><img class="col-2" alt=""></div><div class="meal"><div class="col-1"><h3>Chia bowl</h3><p>Graines de chia bio, myrtilles, grenades, crunola bio</p><div><div>6.60</div><div>Populaire</div></div></div><img class="col-2" alt=""></div><div class="meal"><div class="col-1"><h3>Bircher Muesli</h3><p>Muesli maison bio, boisson à l’amande bio, fruits de saison et super graines bio (VEGAN)</p><div><div>6.60</div></div></div><img class="col-2" src="./React App_files/item-image(4).jpg" alt=""></div></div><div class="category"><h2>Viennoiseries et pains</h2><div class="meal"><div class="col-1"><h3>Croissant bio</h3><p></p><div><div>6.60</div></div></div><img class="col-2" src="./React App_files/item-image(5).jpg" alt=""></div><div class="meal"><div class="col-1"><h3>Pain au chocolat bio</h3><p></p><div><div>6.60</div><div>Populaire</div></div></div><img class="col-2" src="./React App_files/item-image(6).jpg" alt=""></div><div class="meal"><div class="col-1"><h3>Pain au raisins bio</h3><p></p><div><div>6.60</div></div></div><img class="col-2" src="./React App_files/item-image(7).jpg" alt=""></div><div class="meal"><div class="col-1"><h3>Baguette à l'ancienne bio</h3><p>300g</p><div><div>6.60</div></div></div><img class="col-2" src="./React App_files/item-image.jpg" alt=""></div><div class="meal"><div class="col-1"><h3>Grande brioche</h3><p></p><div><div>6.60</div></div></div><img class="col-2" alt=""></div><div class="meal"><div class="col-1"><h3>Muffin bio myrtilles (100% végétalien)</h3><p>Vegan</p><div><div>6.60</div><div>Populaire</div></div></div><img class="col-2" src="./React App_files/item-image(8).jpg" alt=""></div><div class="meal"><div class="col-1"><h3>Muffin bio pomme cannelle</h3><p></p><div><div>6.60</div></div></div><img class="col-2" alt=""></div><div class="meal"><div class="col-1"><h3>Muffin banane chocolat bio</h3><p></p><div><div>6.60</div></div></div><img class="col-2" alt=""></div><div class="meal"><div class="col-1"><h3>Pain multi-céréales sans gluten</h3><p>350g</p><div><div>6.60</div></div></div><img class="col-2" src="./React App_files/item-image(9).jpg" alt=""></div><div class="meal"><div class="col-1"><h3>Pain multi-céréales raisins bio</h3><p>700g</p><div><div>6.60</div></div></div><img class="col-2" alt=""></div><div class="meal"><div class="col-1"><h3>Flûte raisins et noisettes bio</h3><p></p><div><div>6.60</div></div></div><img class="col-2" src="./React App_files/item-image(10).jpg" alt=""></div><div class="meal"><div class="col-1"><h3>Baguette Graines de Potiron &amp; Tournesol</h3><p>300g</p><div><div>6.60</div></div></div><img class="col-2" alt=""></div></div><div class="category"><h2>Salades</h2><div class="meal"><div class="col-1"><h3>César BLT</h3><p>Poulet, parmesan, avocat, croûtons, bacon, chips de légumes, jeunes pousses, kale et tomates cerises</p><div><div>6.60</div><div>Populaire</div></div></div><img class="col-2" src="./React App_files/item-image(11).jpg" alt=""></div><div class="meal"><div class="col-1"><h3>Buddha bowl</h3><p>Saumon fumé, avocat, super graines bio, lentilles au parika, chou rouge, concombre, jeunes pousses</p><div><div>6.60</div></div></div><img class="col-2" src="./React App_files/item-image(12).jpg" alt=""></div><div class="meal"><div class="col-1"><h3>Veggie Bowl</h3><p>Sarrasin bio, quinoa bio, houmous de carottes, lentilles au paprika, courge butternut, grenade, avocat, caviar d'algues, chips de légumes bio</p><div><div>6.60</div></div></div><img class="col-2" src="./React App_files/item-image(13).jpg" alt=""></div><div class="meal"><div class="col-1"><h3>Falafel Bowl</h3><p>Quinoa bio, houmous bio, carottes, chou rouge, pousses d’épinard, sauce tahini et pain de saison (VEGAN)</p><div><div>6.60</div><div>Populaire</div></div></div><img class="col-2" src="./React App_files/item-image(14).jpg" alt=""></div><div class="meal"><div class="col-1"><h3>Bol lentilles ou quinoa (100% végétalien)</h3><p></p><div><div>3.90</div></div></div><img class="col-2" alt=""></div><div class="meal"><div class="col-1"><h3>Quiche Lorraine</h3><p>Servie avec une salade de jeunes pousses bio</p><div><div>6.90</div></div></div><img class="col-2" alt=""></div><div class="meal"><div class="col-1"><h3>Mini salade lentilles (100% végétarien)</h3><p>Lentilles au paprika, carottes bio et oeuf poché bio</p><div><div>3.90</div></div></div><img class="col-2" alt=""></div></div><div class="category"><h2>Tartines froides</h2><div class="meal"><div class="col-1"><h3>Toast avocat bio (100% végétalien)</h3><p>Purée d'avocat bio et gomasio bio</p><div><div>6.90</div></div></div><img class="col-2" src="./React App_files/item-image(15).jpg" alt=""></div><div class="meal"><div class="col-1"><h3>Tartine poulet fumé &amp; avocat</h3><p>Concombre bio et cébettes</p><div><div>6.90</div></div></div><img class="col-2" alt=""></div><div class="meal"><div class="col-1"><h3>Jambon fumé &amp; mozzarella di bufala bio tomates séchées</h3><p>Mozzarella di bufala bio</p><div><div>6.90</div><div>Populaire</div></div></div><img class="col-2" alt=""></div><div class="meal"><div class="col-1"><h3>Tartine Jambon Blanc &amp; Comté Bio</h3><p></p><div><div>6.90</div></div></div><img class="col-2" src="./React App_files/item-image(16).jpg" alt=""></div><div class="meal"><div class="col-1"><h3>Tartine Houmous de Carotte &amp; Féta</h3><p>Super graines bio, grenade, concombre et roquette (Végétarien)</p><div><div>6.90</div></div></div><img class="col-2" src="./React App_files/item-image(17).jpg" alt=""></div></div><div class="category"><h2>Soupe &amp; plats chauds</h2><div class="meal"><div class="col-1"><h3>Le déjeuner du boulanger</h3><p>Demi-tartine du jour &amp; soupe du jour aux légumes bio, servi avec du pain bio et une salade de jeunes pousses bio</p><div><div>6.90</div></div></div><img class="col-2" alt=""></div><div class="meal"><div class="col-1"><h3>Soupe du jour aux légumes bio (100% végétalien)</h3><p></p><div><div>6.90</div></div></div><img class="col-2" alt=""></div><div class="meal"><div class="col-1"><h3>Pot-au-feu de légumes bio, curry bio et poulet grillé</h3><p></p><div><div>6.90</div></div></div><img class="col-2" src="./React App_files/item-image(18).jpg" alt=""></div><div class="meal"><div class="col-1"><h3>Pot-au-feu de légumes bio, quinoa bio &amp; harissa bio (100% végétalien)</h3><p></p><div><div>6.90</div><div>Populaire</div></div></div><img class="col-2" alt=""></div><div class="meal"><div class="col-1"><h3>Chili sin carne (vegan)</h3><p>3 haricots, purée avocat, spécialité au soja bio &amp; cebettes</p><div><div>6.90</div></div></div><img class="col-2" src="./React App_files/item-image(19).jpg" alt=""></div><div class="meal"><div class="col-1"><h3>Curry de Coco aux Légumes</h3><p>Servi avec sarrasin bio et chutney de cassis au gingembre (VEGAN)</p><div><div>6.90</div><div>Populaire</div></div></div><img class="col-2" src="./React App_files/item-image(20).jpg" alt=""></div></div><div class="category"><h2>Sandwichs baguette</h2></div><div class="category"><h2>Desserts</h2></div><div class="category"><h2>Boissons fraîches</h2></div><div class="category"><h2>Epicerie bio</h2></div><div class="category"><h2>Repas corporate</h2></div><div class="category"><h2>Couverts</h2></div>;</div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script src="./React App_files/bundle.js"></script><script src="./React App_files/vendors_main.chunk.js"></script><script src="./React App_files/main.chunk.js"></script>
+
+</body></html>

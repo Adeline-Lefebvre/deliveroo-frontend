@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+body {
+  font-family: "System-ui";
+  color: #2e3333;
+  background-color: #f3f5f5;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 32px;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  font-size: 24px;
+  font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h3 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 19px;
+  color: #868a8a;
+}
+
+header {
+  height: 59px;
+  border-bottom: lightgray solid 1px;
+  background-color: white;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  height: 59px;
+}
+
+.restaurant {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.restaurant > .col-2 {
+  width: 350px;
+  margin-left: 30px;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.basket {
+  width: 350px;
+  height: 300px;
+  margin-left: 30px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.categories {
+  width: 820px;
+}
+
+.category {
+  margin-bottom: 30px;
+}
+
+.meals {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.meal {
+  width: 400px;
+  height: 160px;
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin: auto 15px auto auto;
+}
+
+.meal > .col-1 {
+  margin-right: 15px;
+  padding-left: 10px;
+}
+
+.meal > p {
+  height: 42px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  color: #808484;
 }
