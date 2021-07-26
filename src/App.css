@@ -82,6 +82,10 @@ header {
   margin-bottom: 25px;
 }
 
+.meal:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
 .img {
   width: 130px;
   height: 130px;
