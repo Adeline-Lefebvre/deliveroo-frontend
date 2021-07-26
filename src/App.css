@@ -51,14 +51,6 @@ header {
   border-radius: 5px;
 }
 
-.basket {
-  width: 350px;
-  height: 300px;
-  margin-left: 30px;
-  background-color: white;
-  border-radius: 5px;
-}
-
 .categories {
   width: 820px;
 }
@@ -114,4 +106,26 @@ header {
   color: #ff8000;
   font-weight: bold;
   margin: auto 15px;
+}
+
+.basket {
+  width: 350px;
+  height: 300px;
+  margin-left: 30px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.basket > button {
+  color: #ffffff;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: #00cdbd;
+  line-height: 50px;
+  margin: 10px 10px auto 10px;
+  border-radius: 5px;
+  width: 330px;
 }

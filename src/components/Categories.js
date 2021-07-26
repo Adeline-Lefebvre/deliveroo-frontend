@@ -1,4 +1,5 @@
 import Meal from "./Meal.js";
+import Basket from "./Basket.js";
 import "../App.css";
 
 const Categories = ({ data }) => {
@@ -22,7 +23,7 @@ const Categories = ({ data }) => {
           );
         })}
       </div>
-      <div className="basket"></div>
+      <Basket />
     </div>
   );
 };
