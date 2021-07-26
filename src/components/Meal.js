@@ -5,7 +5,7 @@ const Meal = ({ meal }) => {
     <div className="meal">
       <div className="col-1">
         <h3>{meal.title}</h3>
-        <p className="description">{meal.description}</p>
+        {meal.description && <p className="description">{meal.description}</p>}
         <div className="line-3">
           <div style={{ fontSize: "17px", color: "#808484" }}>
             {meal.price}
