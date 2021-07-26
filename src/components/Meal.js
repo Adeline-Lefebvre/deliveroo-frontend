@@ -5,13 +5,17 @@ const Meal = ({ meal }) => {
     <div className="meal">
       <div className="col-1">
         <h3>{meal.title}</h3>
-        <p>{meal.description}</p>
-        <div>
-          <div>{meal.price}</div>
-          {meal.popular && <div>Populaire</div>}
+        <p className="description">{meal.description}</p>
+        <div className="line-3">
+          <div style={{ fontSize: "17px", color: "#808484" }}>{meal.price}</div>
+          {meal.popular && (
+            <div className="popular">
+              <i class="fas fa-star"></i>Populaire
+            </div>
+          )}
         </div>
       </div>
-      <img className="img" src={meal.picture} alt="" />
+      {meal.picture && <img className="img" src={meal.picture} alt="" />}
     </div>
   );
 };
