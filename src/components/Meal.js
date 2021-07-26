@@ -7,10 +7,14 @@ const Meal = ({ meal }) => {
         <h3>{meal.title}</h3>
         <p className="description">{meal.description}</p>
         <div className="line-3">
-          <div style={{ fontSize: "17px", color: "#808484" }}>{meal.price}</div>
+          <div style={{ fontSize: "17px", color: "#808484" }}>
+            {meal.price}
+            {" €"}
+          </div>
           {meal.popular && (
             <div className="popular">
-              <i class="fas fa-star"></i>Populaire
+              <i class="fas fa-star" style={{ marginRight: "5px" }}></i>
+              Populaire
             </div>
           )}
         </div>

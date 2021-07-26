@@ -1,5 +1,5 @@
 body {
-  font-family: "System-ui";
+  font-family: "Montserrat";
   color: #2e3333;
   background-color: #f3f5f5;
 }
@@ -12,6 +12,8 @@ h1 {
 h2 {
   font-size: 24px;
   font-weight: bold;
+  margin: 0;
+  margin-bottom: 15px;
 }
 
 h3 {
@@ -95,10 +97,9 @@ header {
 
 .description {
   height: 42px;
-  width: 200px;
+  line-height: 21px;
+  width: 220px;
   overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
   font-size: 14px;
   color: #808484;
 }
@@ -107,5 +108,9 @@ header {
   font-size: 12px;
   color: #ff8000;
   font-weight: bold;
-  margin-left: 15px;
+  margin: auto 15px;
+}
+
+.line-3 {
+  margin: 0;
 }
