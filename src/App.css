@@ -55,7 +55,7 @@ header {
 }
 
 .categories {
-  width: 820px;
+  /* width: 820px; */
 }
 
 .category {
@@ -116,13 +116,12 @@ header {
 }
 
 .basket {
-  width: 350px;
-  height: 330px;
+  width: 46%;
+  height: fit-content;
   margin-left: 30px;
   background-color: white;
   border-radius: 5px;
   box-shadow: 2px 2px 20px rgba(168, 168, 168, 0.2);
-  box-sizing: border-box;
   padding: 10px;
 }
 

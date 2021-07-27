@@ -1,0 +1,26 @@
+/* @media (max-width: 1250px) {
+  .container {
+    max-width: 96%;
+  }
+}
+
+@media (max-width: 1240px) {
+  .description {
+    width: 200px;
+  }
+}
+
+@media (max-width: 750px) {
+  .basket {
+    width: 46%;
+    margin-left: 2%;
+  }
+
+  .basket > button {
+    width: 100%;
+  }
+
+  .meal {
+    width: 52%;
+  }
+} */

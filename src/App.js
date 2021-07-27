@@ -1,6 +1,7 @@
 import Header from "./components/Header.js";
 import Restaurant from "./components/Restaurant.js";
 import Categories from "./components/Categories.js";
+import "./responsive.css";
 import "./App.css";
 import axios from "axios";
 import { useState, useEffect } from "react";

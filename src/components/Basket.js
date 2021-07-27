@@ -1,19 +1,20 @@
 import Item from "./Item.js";
 import "../App.css";
 
-const Basket = () => {
+const Basket = ({ items, subTotal, total }) => {
   return (
     <div className="basket">
       <button>Valider mon panier</button>
       <div className="items">
-        <Item />
-        <Item />
+        {items.map((item) => (
+          <Item item={item} />
+        ))}
       </div>
 
       <div className="subTotal">
         <div className="line">
           <div>Sous-total</div>
-          <div>25,00 €</div>
+          <div>{subTotal} €</div>
         </div>
         <div className="line">
           <div>Frais de livraison</div>
@@ -23,7 +24,7 @@ const Basket = () => {
 
       <div className="total">
         <div>Total</div>
-        <div>27,50€</div>
+        <div>{total} €</div>
       </div>
     </div>
   );
