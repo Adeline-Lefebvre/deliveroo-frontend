@@ -1,38 +1,25 @@
-import { useState } from "react";
 import "../App.css";
 
-const Item = ({ item }) => {
-  const [counter, setCounter] = useState(1);
+const Item = ({ item, addToCart, deleteOne }) => {
+  const total = (item.price * item.quantity).toFixed(2);
+
   return (
     <div className="item">
       <div className="col-1">
-        <button
-          onClick={() => {
-            setCounter(counter - 1);
-          }}
-        >
-          <i class="fas fa-minus-circle"></i>
-        </button>
-        <div>{counter}</div>
-        <button
-          onClick={() => {
-            setCounter(counter + 1);
-          }}
-        >
-          <i class="fas fa-plus-circle"></i>
-        </button>
+        <i className="fas fa-minus-circle" onClick={() => deleteOne(item)}></i>
+        <div>{item.quantity}</div>
+        <i className="fas fa-plus-circle" onClick={() => addToCart(item)}></i>
         <div
           style={{
             marginLeft: "10px",
             width: "180px",
-            lineHeight: "20px",
-            marginBottom: "10px",
+            lineHeight: "25px",
           }}
         >
           {item.title}
         </div>
       </div>
-      <div>{item.price} €</div>
+      <div>{total} €</div>
     </div>
   );
 };
