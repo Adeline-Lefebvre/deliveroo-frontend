@@ -52,34 +52,43 @@ const Categories = ({ data }) => {
   };
 
   return (
-    <div className="container" style={{ padding: "30px 0", display: "flex" }}>
-      <div className="categories">
-        {data.categories.map((category, index) => {
-          return (
-            <div key={index}>
-              {category.meals.length > 0 && (
-                <div className="category">
-                  <h2 key={index}>{category.name}</h2>
-                  <div className="meals">
-                    {category.meals.map((meal) => {
-                      return (
-                        <Meal meal={meal} key={meal.id} addToCart={addToCart} />
-                      );
-                    })}
+    <div>
+      <div className="container cat">
+        <div className="categories">
+          {data.categories.map((category, index) => {
+            return (
+              <div key={index}>
+                {category.meals.length > 0 && (
+                  <div className="category">
+                    <h2 key={index}>{category.name}</h2>
+                    <div className="meals">
+                      {category.meals.map((meal) => {
+                        return (
+                          <Meal
+                            meal={meal}
+                            key={meal.id}
+                            addToCart={addToCart}
+                          />
+                        );
+                      })}
+                    </div>
                   </div>
-                </div>
-              )}
-            </div>
-          );
-        })}
+                )}
+              </div>
+            );
+          })}
+        </div>
+        <Cart
+          items={items}
+          subTotal={subTotal}
+          total={total}
+          addToCart={addToCart}
+          deleteOne={deleteOne}
+        />
       </div>
-      <Cart
-        items={items}
-        subTotal={subTotal}
-        total={total}
-        addToCart={addToCart}
-        deleteOne={deleteOne}
-      />
+      <div className="see-cart">
+        <div className="see-cart-btn">Voir le panier</div>
+      </div>
     </div>
   );
 };

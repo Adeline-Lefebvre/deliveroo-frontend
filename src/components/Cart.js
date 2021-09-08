@@ -10,20 +10,17 @@ const cart = ({ items, subTotal, total, addToCart, deleteOne }) => {
     }
   }
 
-  return (
+  return displayItems.length > 0 ? (
     <div className="cart">
       <button>Valider mon panier</button>
-      <div className="items">
-        {displayItems.map((item, index) => (
-          <Item
-            key={index}
-            item={item}
-            addToCart={addToCart}
-            deleteOne={deleteOne}
-          />
-        ))}
-      </div>
-
+      {displayItems.map((item, index) => (
+        <Item
+          key={index}
+          item={item}
+          addToCart={addToCart}
+          deleteOne={deleteOne}
+        />
+      ))}
       <div className="subTotal">
         <div className="line">
           <div>Sous-total</div>
@@ -38,6 +35,13 @@ const cart = ({ items, subTotal, total, addToCart, deleteOne }) => {
       <div className="total">
         <div>Total</div>
         <div>{total} €</div>
+      </div>
+    </div>
+  ) : (
+    <div className="empty-cart">
+      <button className="empty-cart-btn">Valider mon panier</button>
+      <div style={{ marginTop: "50px", color: "#8b9a9b" }}>
+        Votre panier est vide
       </div>
     </div>
   );

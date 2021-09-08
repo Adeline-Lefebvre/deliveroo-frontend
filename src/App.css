@@ -48,14 +48,24 @@ header {
   display: flex;
 }
 
-.restaurant > .col-2 {
+.restaurant > img {
   width: 350px;
   margin-left: 30px;
   border-radius: 5px;
 }
 
+.restaurant > .col-1 {
+  max-height: 200px;
+  overflow: hidden;
+}
+
 .categories {
   flex: 1;
+}
+
+.cat {
+  padding: 30px 0;
+  display: flex;
 }
 
 .category {
@@ -69,7 +79,7 @@ header {
 }
 
 .meal {
-  width: 400px;
+  width: 49%;
   height: 160px;
   border-radius: 5px;
   background-color: white;
@@ -98,7 +108,6 @@ header {
 .description {
   height: 42px;
   line-height: 21px;
-  width: 220px;
   overflow: hidden;
   font-size: 14px;
   color: #808484;
@@ -128,6 +137,20 @@ header {
   box-sizing: border-box;
 }
 
+.empty-cart {
+  width: 350px;
+  height: 180px;
+  text-align: center;
+  margin-left: 30px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 20px rgba(168, 168, 168, 0.2);
+  padding: 10px;
+  position: sticky;
+  top: 20px;
+  box-sizing: border-box;
+}
+
 .cart > button {
   color: #ffffff;
   border: none;
@@ -136,6 +159,19 @@ header {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   background-color: #00cdbd;
+  line-height: 50px;
+  border-radius: 5px;
+  width: 330px;
+}
+
+.empty-cart-btn {
+  color: #8b9a9b;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: #bac3c3;
   line-height: 50px;
   border-radius: 5px;
   width: 330px;
